@@ -1,38 +1,32 @@
 <% provide(:title, 'Sign in') %>
-<div c="d-flex align-items-center justify-content-center mt-4">
+<br>
+<div class="d-flex align-items-center justify-content-center mt-4">
   <div>
-    <h2 class="text-center"><%= t('forms.sign_in') %></h2>
-    <%= link_to sign_up_path do %>
-      <h5 class="text-center fw-semibold text-dark m-0"><%= t('sessions.create_an_account') %></h5>
-    <% end %>
-
+    <h2 class="text-center">Sign in</h2>
+    <a href="/en/sign_up">
+      <h5 class="text-center fw-semibold text-dark m-0">Or create an account</h5>
+</a>
     <div class="mt-5 input-size">
-      <%= form_with model: @user, url: login_path, scope: :user  do |form| %>
-        <%= render partial: "shared/form_errors", locals: { object: form.object } %>
-
+      <form action="/en/login" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="lDdOcRUDdeojQwBTIr04cuNNvpxgQ514EU35RSus_c8H1mTHyLZQT0PVSrLxradFVnyXGloHzIedCeQpgOZ8MQ" autocomplete="off">
         <div class="mb-3 row">
           <div class="col-md-3">
-            <%= form.label :email, class: "form-label" %>
+            <label class="form-label" for="user_email">Email</label>
           </div>
           <div class="col-md-9">
-            <%= form.email_field :email, class: "form-control border-danger", required: true %>
+            <input class="form-control border-danger" required="required" type="email" name="user[email]" id="user_email">
           </div>
         </div>
-        
         <div class="mb-3 row">
           <div class="col-md-3">
-            <%= form.label :password, class: "form-label" %>
+            <label class="form-label" for="user_password">Password</label>
           </div>
           <div class="col-md-9">
-            <%= form.password_field :password, class: "form-control border-danger", required: true %>
+            <input class="form-control border-danger" required="required" type="password" name="user[password]" id="user_password">
           </div>
         </div>
-
         <div class="text-center">
-          <%= form.submit t('forms.sign_in'), class: "mt-5 w-75" %>
+          <input type="submit" name="commit" value="Sign in" class="btn btn-danger mt-5 w-75" data-disable-with="Sign in">
         </div>
-
-      <% end %>
-    </div>
+</form>    </div>
   </div>
 </div>
