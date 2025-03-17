@@ -47,7 +47,8 @@ module QuizResultsHelper
   def score_percentage(quiz_results)
     return 0 if TOTAL_QUESTIONS.zero?
 
-    (total_correct_answers(quiz_results).to_f / TOTAL_QUESTIONS * 100)
+    percentage = (total_correct_answers(quiz_results).to_f / TOTAL_QUESTIONS * 100)
+    percentage.round(2)
   end
 
   # Checks if a user's answer matches the correct answer.

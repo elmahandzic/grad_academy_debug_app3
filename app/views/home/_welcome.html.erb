@@ -1,8 +1,8 @@
 <% provide(:title, 'Welcome') %>
 <div id="welcome" class="container w-75 mt-5 mb-4 pt-5">
-    <p class="text-danger">
+    <h1 class="text-danger">
     <%= t('welcome.instructions.title', username: current_user.username).html_safe %>
-  </p>
+  </h1>
   <p class="lead">
     <hr>
     <%= t('welcome.instructions.subtitle') %>
