@@ -51,6 +51,9 @@ en:
     submit: "Submit"
     back_button: "Back"
     scoreboard: "Scoreboard"
+    minigames: "Minigames"
+  mini_games:
+    title: "Minigames"
   quiz_results:
     your_score: "YOUR SCORE: "
     score: "%{score}%"

@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     root to: 'home#index'
     get 'welcome', to: 'home#index'
 
+    get 'minigames', to: 'steps#minigames'
+
     # Users controller routes
     get 'sign_up', to: 'users#new'
     post 'sign_up', to: 'users#create'

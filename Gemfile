@@ -18,6 +18,7 @@ gem 'rubocop-rails', require: false
 gem 'sassc-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
+gem 'ttt_web', '~> 0.4.0'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
