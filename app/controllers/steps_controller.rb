@@ -92,6 +92,9 @@ class StepsController < ApplicationController
     end
   end
 
+  def minigames
+  end
+
   private
 
   # Sets the quiz form based on parameters or defaults.

@@ -14,8 +14,11 @@
         <h5 class="me-3 mb-0">
           <%= link_to t('forms.edit_profile'), edit_user_path, class: 'text-white m-0 fw-normal' %>
         </h5>
-        <h5 class="mb-0">
+        <h5 class="me-3 mb-0">
           <%= link_to t('forms.sign_out'), '#', class: 'text-white m-0 fw-normal', data: { bs_toggle: 'modal', bs_target: '#signoutModal' } %>
+        </h5>
+        <h5 class = "mb-0">
+          <%= link_to t('forms.minigames'), minigames_path, class: 'text-white m-0 fw-normal'%>
         </h5>
         <%= render 'shared/flag' %>
       </div>

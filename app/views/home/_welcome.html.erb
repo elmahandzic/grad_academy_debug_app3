@@ -4,8 +4,10 @@
     <%= t('welcome.instructions.title', username: current_user.username).html_safe %>
   </h1>
   <p class="lead">
-    <hr>
-    <%= t('welcome.instructions.subtitle') %>
+    <hr class = "border-top border-3 border-danger my-2">
+    <br>
+    <br>
+    <p class = "lead"> <%= t('welcome.instructions.subtitle') %> </p>
   </p>
   <br/>
 
@@ -17,6 +19,7 @@
 
   <div class="text-center">
     <hr>
+    <br>
     <%= link_to t('start_quiz'), step_path(id: 1), class: "btn btn-danger mx-auto px-5" %>
   </div>
 </div>
