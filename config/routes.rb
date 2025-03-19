@@ -4,6 +4,11 @@ Rails.application.routes.draw do
     get 'welcome', to: 'home#index'
 
     get 'minigames', to: 'steps#minigames'
+    get 'spacegame', to: 'steps#spacegame'
+    get 'tictactoe', to: 'steps#tictactoe'
+     get 'chess', to: 'steps#chess'
+     get 'connectfour', to: 'steps#connectfour'
+     get 'tanks', to: 'steps#tanks'
 
     # Users controller routes
     get 'sign_up', to: 'users#new'

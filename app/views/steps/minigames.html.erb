@@ -5,11 +5,36 @@
     <h1 class="text-danger text-center"> Minigames </h1>
     <hr class="border border-danger w-100 border-2 my-2">
 </header>
+<div class="d-flex flex-column align-items-center justify-content-center mt-5">
+  <h2 class="mb-4 text-center">Select a Game</h2>
 
-<div class="container w-75 pt-5 border border-danger w-100 border-2 my-2" style = "border-radius: 10px; background-color:blanchedalmond">
-    <h1 class = "text-center"> <u> Space Adventure Game </u> </h1>
-    <iframe class = "container d-flex flex-column align-items-center mb-4 mt-4" style = "height: 600px" src="https://danyaalz.github.io/UniGame/">
+  <div class="d-grid gap-3">
+    <%= link_to spacegame_path, class: "btn btn-danger btn-lg" do %>
+      <%= t('forms.spacegame') %>
+    <% end %>
+
+    <%= link_to tictactoe_path, class: "btn btn-danger btn-lg" do %>
+      <%= t('forms.Tic_tac_toe') %>
+    <% end %>
+
+    <%= link_to chess_path, class: "btn btn-danger btn-lg" do %>
+      <%= t('forms.chess') %>
+    <% end %>
+
+    <%= link_to connectfour_path, class: "btn btn-danger btn-lg" do %>
+      <%= t('forms.connectfour') %>
+    <% end %>
+
+    <%= link_to tanks_path, class: "btn btn-danger btn-lg" do %>
+      <%= t('forms.tanks') %>
+    <% end %>
+  </div>
+
 </div>
+
+
+
+
 
 
 

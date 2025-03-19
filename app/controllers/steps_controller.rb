@@ -95,6 +95,22 @@ class StepsController < ApplicationController
   def minigames
   end
 
+  def spacegame
+  end
+
+  def tictactoe
+  end
+
+  def chess
+  end
+
+  def connectfour
+  end
+
+  def tanks
+  end
+
+
   private
 
   # Sets the quiz form based on parameters or defaults.
