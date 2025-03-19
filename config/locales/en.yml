@@ -52,8 +52,23 @@ en:
     back_button: "Back"
     scoreboard: "Scoreboard"
     minigames: "Minigames"
+    SpaceGame: "Space Game"
+    Tic_tac_toe: "Tic-Tac-Toe"
+    Chess: "Chess"
+    connectfour: "Connect Four"
+    tanks: "Tanks"
+
+  tanks:
+    title: "Tanks"
+  connectfour:
+    title: "Connect Four"
+  Chess:
+    title: "Chess"
   mini_games:
     title: "Minigames"
+  SpaceGame:
+    title: "SpaceGame"
+  Tic_tac_toe: "Tic-Tac-Toe"
   quiz_results:
     your_score: "YOUR SCORE: "
     score: "%{score}%"
